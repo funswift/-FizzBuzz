@@ -26,9 +26,8 @@ class ViewController: UIViewController {
         let screenHeight:CGFloat = self.view.frame.height
         // ボタンのインスタンス
         let button = UIButton()
-        //コンソールに表示するために呼び出す
-        self.FizzBuzzCount()
-        
+//        //コンソールに表示するために呼び出す
+//        self.FizzBuzzCount()
         // ViewControllerの背景色
         self.view.backgroundColor = UIColor.init(named: "Background")
         
@@ -48,34 +47,29 @@ class ViewController: UIViewController {
         button.addTarget(self,
                          action: #selector(ViewController.buttonTapped(sender:)),
                          for: .touchUpInside)
-        // ラベルのサイズを設定
-        label.frame = CGRect(x:screenWidth/4, y:200,
-                             width:screenWidth/2, height:50);
         
+        // ラベルのサイズを設定
+        label.frame = CGRect(x:screenWidth/4, y:200, width:screenWidth/2, height:50);
         // ラベルの文字を設定
         label.text = "0"
-        
         // 文字を中央にalignする
         label.textAlignment = NSTextAlignment.center
-        
         // ラベルのフォントサイズ
         label.font = UIFont.systemFont(ofSize: 36)
-        
         // Viewにラベルを追加
         self.view.addSubview(label)
     }
     
     @objc func buttonTapped(sender: Any) {
         count += 1
-        label.text = FizzBuzzCheck(i: count)
-        
+        label.text = fizzBuzzCheck(i: count)
     }
     
     /*
      funciton name: FizzBuzzCheck
      return String
      */
-    func FizzBuzzCheck(i: Int) -> String {
+    func fizzBuzzCheck(i: Int) -> String {
         switch (i%3, i%5) {
         case (0, 0):
             label.text = FizzBuzzStr
@@ -96,9 +90,9 @@ class ViewController: UIViewController {
      funciton name: FizzBuzzCount
      return void
      */
-    func FizzBuzzCount() {
+    func fizzBuzzCount() {
         for x in 1...num {
-            print(FizzBuzzCheck(i: x))
+            print(fizzBuzzCheck(i: x))
         }
     }
 }
