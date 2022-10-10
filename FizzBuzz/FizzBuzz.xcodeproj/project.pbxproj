@@ -101,11 +101,11 @@
 		9279C1ED28EF063300C0A266 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				9279C1EE28EF063300C0A266 /* AppDelegate.swift */,
-				9279C1F028EF063300C0A266 /* SceneDelegate.swift */,
 				9279C1F228EF063300C0A266 /* ViewController.swift */,
-				9279C1F428EF063300C0A266 /* Main.storyboard */,
+				9279C1F028EF063300C0A266 /* SceneDelegate.swift */,
+				9279C1EE28EF063300C0A266 /* AppDelegate.swift */,
 				9279C1FA28EF063400C0A266 /* Assets.xcassets */,
+				9279C1F428EF063300C0A266 /* Main.storyboard */,
 				9279C1FC28EF063400C0A266 /* LaunchScreen.storyboard */,
 				9279C1FF28EF063400C0A266 /* Info.plist */,
 				9279C1F728EF063300C0A266 /* FizzBuzz.xcdatamodeld */,
@@ -441,7 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BWL68L4987;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,7 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BWL68L4987;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
