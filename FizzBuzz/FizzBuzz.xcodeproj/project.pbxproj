@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9276472928F542300051FD2E /* fizzbuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276472828F542300051FD2E /* fizzbuzz.swift */; };
 		9279C1EF28EF063300C0A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279C1EE28EF063300C0A266 /* AppDelegate.swift */; };
 		9279C1F128EF063300C0A266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279C1F028EF063300C0A266 /* SceneDelegate.swift */; };
 		9279C1F328EF063300C0A266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279C1F228EF063300C0A266 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9276472828F542300051FD2E /* fizzbuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fizzbuzz.swift; sourceTree = "<group>"; };
 		9279C1EB28EF063300C0A266 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9279C1EE28EF063300C0A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9279C1F028EF063300C0A266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				9279C1EE28EF063300C0A266 /* AppDelegate.swift */,
 				9279C1F028EF063300C0A266 /* SceneDelegate.swift */,
 				9279C1F228EF063300C0A266 /* ViewController.swift */,
+				9276472828F542300051FD2E /* fizzbuzz.swift */,
 				9279C1F428EF063300C0A266 /* Main.storyboard */,
 				9279C1FA28EF063400C0A266 /* Assets.xcassets */,
 				9279C1FC28EF063400C0A266 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				9279C1F328EF063300C0A266 /* ViewController.swift in Sources */,
 				9279C1EF28EF063300C0A266 /* AppDelegate.swift in Sources */,
 				9279C1F128EF063300C0A266 /* SceneDelegate.swift in Sources */,
+				9276472928F542300051FD2E /* fizzbuzz.swift in Sources */,
 				9279C1F928EF063300C0A266 /* FizzBuzz.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
