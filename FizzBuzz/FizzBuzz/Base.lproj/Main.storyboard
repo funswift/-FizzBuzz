@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-Cl-S8b">
-                                <rect key="frame" x="96.5" y="149" width="221" height="115"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-Cl-S8b">
+                                <rect key="frame" x="96.5" y="190" width="221" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztc-8t-NEO">
-                                <rect key="frame" x="52" y="370" width="310" height="156"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztc-8t-NEO">
+                                <rect key="frame" x="94.5" y="411" width="225" height="74"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
@@ -34,17 +34,28 @@
                                     <action selector="countup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOC-Vn-ins"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nd-3R-wb1">
+                                <rect key="frame" x="96.5" y="591" width="221" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ztc-8t-NEO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HwM-2M-gvN"/>
+                            <constraint firstItem="Ztc-8t-NEO" firstAttribute="top" secondItem="LGB-Cl-S8b" secondAttribute="bottom" constant="106" id="ILc-1A-fuE"/>
+                            <constraint firstItem="LGB-Cl-S8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PdB-kb-MaH"/>
                             <constraint firstItem="Ztc-8t-NEO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XYB-kp-uPF"/>
                             <constraint firstItem="LGB-Cl-S8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyo-ia-bPB"/>
+                            <constraint firstItem="4nd-3R-wb1" firstAttribute="top" secondItem="Ztc-8t-NEO" secondAttribute="bottom" constant="106" id="eNe-2d-xdo"/>
+                            <constraint firstItem="4nd-3R-wb1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vMC-QP-kxM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="input" destination="LGB-Cl-S8b" id="Wjk-Rn-SaR"/>
+                        <outlet property="output" destination="4nd-3R-wb1" id="5hy-ww-xBc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
