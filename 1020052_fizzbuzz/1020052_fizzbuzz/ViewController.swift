@@ -8,24 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var n = 0
 
+    @IBOutlet weak var countNumber: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for i in 1 ..< 101{
-            switch (i%3, i%5){
-            case (0, 0):
-                print("FizzBuzz")
-            case (0, _):
-                print("Fizz")
-            case (_, 0):
-                print("Buzz")
-            default:
-                print(i)
-            }
-        }
+        countNumber.text = String(n)
+        
     }
-
+    @IBAction func button(_ sender: Any) {
+        n += 1
+        countNumber.text = String(n)
+    }
+    
 
 }
 
