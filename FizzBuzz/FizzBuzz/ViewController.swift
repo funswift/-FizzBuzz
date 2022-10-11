@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 36)
         labelCount.font = UIFont.systemFont(ofSize: 36)
         // Viewにラベルを追加
-        self.view.addSubview(label)
+        //self.view.addSubview(label)
         self.view.addSubview(labelCount)
     }
     
