@@ -22,48 +22,48 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // スクリーンの横縦幅
-        let screenWidth:CGFloat = self.view.frame.width
-        let screenHeight:CGFloat = self.view.frame.height
-        // ボタンのインスタンス
-        let button = UIButton()
-//        //コンソールに表示するために呼び出す
-//        self.FizzBuzzCount()
-        // ViewControllerの背景色
-        self.view.backgroundColor = UIColor.init(named: "Background")
-        
-        // ボタンの位置とサイズを設定
-        button.frame = CGRect(x:25, y:screenHeight/2, width:screenWidth-50, height:50)
-        // ボタンのタイトルを設定
-        button.setTitle("Counter", for:UIControl.State.normal)
-        // タイトルの色
-        button.setTitleColor(UIColor.black, for: .normal)
-        // ボタンのフォントサイズ
-        button.titleLabel?.font =  UIFont.systemFont(ofSize: 36)
-        // 背景色
-        button.backgroundColor = UIColor.white
-        // Viewにボタンを追加
-        self.view.addSubview(button)
-        // タップされたときのaction
-        button.addTarget(self,
-                         action: #selector(ViewController.buttonTapped(sender:)),
-                         for: .touchUpInside)
-        
-        // ラベルのサイズを設定
-        label.frame = CGRect(x:screenWidth/4, y:600, width:screenWidth/2, height:50);
-        labelCount.frame = CGRect(x:screenWidth/4, y:200, width:screenWidth/2, height:50);
-        // ラベルの文字を設定
-        label.text = "0"
-        labelCount.text = "0"
-        // 文字を中央にalignする
-        label.textAlignment = NSTextAlignment.center
-        labelCount.textAlignment = NSTextAlignment.center
-        // ラベルのフォントサイズ
-        label.font = UIFont.systemFont(ofSize: 36)
-        labelCount.font = UIFont.systemFont(ofSize: 36)
-        // Viewにラベルを追加
-        //self.view.addSubview(label)
-        self.view.addSubview(labelCount)
+        //コンソールに表示するために呼び出す
+        self.fizzBuzzCount()
+//        // スクリーンの横縦幅
+//        let screenWidth:CGFloat = self.view.frame.width
+//        let screenHeight:CGFloat = self.view.frame.height
+//        // ボタンのインスタンス
+//        let button = UIButton()
+//        // ViewControllerの背景色
+//        self.view.backgroundColor = UIColor.init(named: "Background")
+//
+//        // ボタンの位置とサイズを設定
+//        button.frame = CGRect(x:25, y:screenHeight/2, width:screenWidth-50, height:50)
+//        // ボタンのタイトルを設定
+//        button.setTitle("Counter", for:UIControl.State.normal)
+//        // タイトルの色
+//        button.setTitleColor(UIColor.black, for: .normal)
+//        // ボタンのフォントサイズ
+//        button.titleLabel?.font =  UIFont.systemFont(ofSize: 36)
+//        // 背景色
+//        button.backgroundColor = UIColor.white
+//        // Viewにボタンを追加
+//        self.view.addSubview(button)
+//        // タップされたときのaction
+//        button.addTarget(self,
+//                         action: #selector(ViewController.buttonTapped(sender:)),
+//                         for: .touchUpInside)
+//
+//        // ラベルのサイズを設定
+//        label.frame = CGRect(x:screenWidth/4, y:600, width:screenWidth/2, height:50);
+//        labelCount.frame = CGRect(x:screenWidth/4, y:200, width:screenWidth/2, height:50);
+//        // ラベルの文字を設定
+//        label.text = "0"
+//        labelCount.text = "0"
+//        // 文字を中央にalignする
+//        label.textAlignment = NSTextAlignment.center
+//        labelCount.textAlignment = NSTextAlignment.center
+//        // ラベルのフォントサイズ
+//        label.font = UIFont.systemFont(ofSize: 36)
+//        labelCount.font = UIFont.systemFont(ofSize: 36)
+//        // Viewにラベルを追加
+//        //self.view.addSubview(label)
+//        self.view.addSubview(labelCount)
     }
     
     @objc func buttonTapped(sender: Any) {
