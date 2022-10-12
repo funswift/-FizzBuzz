@@ -27,8 +27,8 @@ class ViewController: UIViewController {
         let screenHeight:CGFloat = self.view.frame.height
         // ボタンのインスタンス
         let button = UIButton()
-//        //コンソールに表示するために呼び出す
-//        self.FizzBuzzCount()
+        //コンソールに表示するために呼び出す
+        self.fizzBuzzCount()
         // ViewControllerの背景色
         self.view.backgroundColor = UIColor.init(named: "Background")
         
